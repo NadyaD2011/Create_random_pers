@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Генератор персонажей</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <div class='container'>
+      
+      {% for card in cards %}
+        <div class='prize'>
+          <div>
+              <h2>{{card.type}}</h2>
+              {% if card.info[0] == '1' or  card.info[0] == '2' or card.info[0] == '3' or  card.info[0] == '4' or card.info[0] == '5' or  card.info[0] == '6' %}
+                <img alt="{{card.type}}" src="images/{{card.info}}">
+              {% elif card.info[0] == '7' or  card.info[0] == '8' or card.info[0] == '9' or  card.info[0] == '10' %}
+                <img alt="{{card.type}}" src="images/{{card.info}}">
+              {% else %}
+                <h2 class="prize__result">{{card.info}}</h2>
+              {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+
+    </div>
+  </body>
+  
+  </html>
