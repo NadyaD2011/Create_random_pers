@@ -1,0 +1,38 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.prize {
+    margin-right: 2%;
+    margin-bottom: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.prize_name:nth-child(4){
+    margin-right: 0;
+}
+button{
+    margin: 0 auto;
+    display: block;
+}
+.prize__result {
+    font-weight: 900;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.img{
+    height: auto;
+    width: auto;
+}
