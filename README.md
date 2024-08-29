@@ -13,7 +13,8 @@
 * [Вспомогательные скрипты](#вспомогательные-скрипты)
     * [general_function.py](#general_functionpy)
 * [Создание дополнительноо раздела в базе данных?](#создание-дополнительноо-раздела-в-базе-данных) 
-* [Как убирать разделы?](#как-убирать-разделы) 
+* [Как убирать разделы?](#как-убирать-разделы)
+* [Как легко перезагрузить сайт?](#как-легко-перезагрузить-сайт)
 * [Cоздатели](#cоздатели)    
 * [Цель проекта](#цель-проекта)
 
@@ -319,6 +320,62 @@ variables = {
     "Матерьял": material,
 }
 ```
+## Как легко перезагрузить сайт?
+
+Чтобы перезагрузить сайт и чтобы он обновился и у вас появился новые настройки перса. Вам потребуется:
+
+1.Вернуться в командную строку и увдеть такую историю:
+
+```
+C:\Users\User> cd \Desktop\Create_random_pers
+C:\Users\User\Desktop\Create_random_pers> pip install -r requirements.txt
+C:\Users\User\Desktop\Create_random_pers> python main.py
+# Пустую строку
+```
+
+2. Чтобы код остановился надо зажать клавиши `Ctrl+C` и вы увидите:
+
+```
+C:\Users\User> cd \Desktop\Create_random_pers
+C:\Users\User\Desktop\Create_random_pers> pip install -r requirements.txt
+C:\Users\User\Desktop\Create_random_pers> python main.py
+# Пустую строку
+C:\Users\User\Desktop\Create_random_pers>
+```
+3. Если вы удалили или не удалили файл `index.html`. Вам этот способ поможет вам просто надо нажать на клавишу `стрелка вверх` строке и вы должны будете увидеть, что вот эта строка изминилась:
+
+**Была:**
+
+```
+C:\Users\User> cd \Desktop\Create_random_pers
+C:\Users\User\Desktop\Create_random_pers> pip install -r requirements.txt
+C:\Users\User\Desktop\Create_random_pers> python main.py
+# Пустую строку
+C:\Users\User\Desktop\Create_random_pers>
+```
+**Стало**
+
+```
+C:\Users\User> cd \Desktop\Create_random_pers
+C:\Users\User\Desktop\Create_random_pers> pip install -r requirements.txt
+C:\Users\User\Desktop\Create_random_pers> python main.py
+# Пустую строку
+C:\Users\User\Desktop\Create_random_pers> python main.py
+```
+
+И чтобы код зароботал нажмите на клавишу `Enter` в командной строке. И чтобы код закончил свою работу нужна снова зажать клавиши `Ctrl+C` и у вас будет вот такая история в командной строке:
+
+```
+C:\Users\User> cd \Desktop\Create_random_pers
+C:\Users\User\Desktop\Create_random_pers> pip install -r requirements.txt
+C:\Users\User\Desktop\Create_random_pers> python main.py
+# Пустую строку
+C:\Users\User\Desktop\Create_random_pers> python main.py
+# Пустую строку
+C:\Users\User\Desktop\Create_random_pers>
+```
+
+И вы можете зайти в свой проект и найти файл `index.html`. И вы увидите, что сайт с другими настройками.
 
 ## Создатели
 
